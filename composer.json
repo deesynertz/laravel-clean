@@ -16,6 +16,13 @@
             "Deesynertz\\Clean\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Deesynertz\\Clean\\CleanServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.5.0",
