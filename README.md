@@ -2,9 +2,9 @@
 
 ## By Deesynertz
 
-### install
+### Installation
 
-Using Composer
+> Using Composer run
 
 ```php
 composer require deesynertz/laravel-clean
@@ -35,3 +35,11 @@ Add the service provider to the `providers` array in your `config/app.php` file:
 ```php
 'CleanComamnd'  => Deesynertz\Clean\Facades\CleanComamnd::class,
 ``` -->
+
+### Usage
+
+> in your Terminal or cmd (windows user) run
+
+```php
+php artisan clean:all
+```
