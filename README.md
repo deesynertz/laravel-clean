@@ -52,13 +52,12 @@ php artisan clean:all
 
 ### Included Commands
 
-```php
-view:clear: Clear compiled view files.
-route:clear: Clear route cache.
-cache:clear: Clear the application cache.
-config:clear: Clear the configuration cache.
-optimize:clear: Clear the cached bootstrap files.
-```
+`view:clear`: Clear compiled view files. </br>
+`route:clear`: Clear route cache.</br>
+`cache:clear`: Clear the application cache.</br>
+`config:clear`: Clear the configuration cache.</br>
+`optimize:clear`: Clear the cached bootstrap files.</br>
+`spatie.permission.cache` : if `Spatie Permission package` is installed</br>
 
 ## Contributions
 

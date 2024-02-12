@@ -14,7 +14,10 @@
     "autoload": {
         "psr-4": {
             "Deesynertz\\Clean\\": "src/"
-        }
+        },
+        "files": [
+            "src/helper.php"
+        ]
     },
     "extra": {
         "laravel": {

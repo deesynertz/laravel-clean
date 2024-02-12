@@ -86,3 +86,14 @@ if (!function_exists('destroyFileInstorage')) {
         return (Storage::disk($basePath)->exists($file_path)) ? Storage::disk($basePath)->delete($file_path) : false;
     }
 }
+
+if (!function_exists('isSpatiePermissionInstalled')) {
+    /**
+     * @return bool
+     */
+    function isSpatiePermissionInstalled()
+    {
+        return class_exists('Spatie\Permission\PermissionServiceProvider');
+    }
+}
+

@@ -59,7 +59,11 @@ class CleanCommand extends Command
         Artisan::call('cache:clear');
         Artisan::call('config:clear');
         Artisan::call('optimize:clear');
-        // Artisan::call('cache:forget spatie.permission.cache');
+        
+        if (isSpatiePermissionInstalled()) {
+            # Spatie Permission package is installed, execute cache:forget command
+            Artisan::call('cache:forget spatie.permission.cache');
+        }
 
         # Log a message
         $this->info('Then all caches cleared and application optimized.');
