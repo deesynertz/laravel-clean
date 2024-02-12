@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 
 
-class Clean extends Command
+class CleanCommand extends Command
 {
     /**
      * The name and signature of the console command.

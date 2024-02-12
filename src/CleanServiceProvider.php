@@ -2,6 +2,7 @@
 
 namespace Deesynertz\Clean;
 
+use Deesynertz\Clean\CleanCommand;
 use Illuminate\Support\ServiceProvider;
 
 class CleanServiceProvider extends ServiceProvider
@@ -17,11 +18,9 @@ class CleanServiceProvider extends ServiceProvider
         //     return new Toastr($app['session'], $app['config']);
         // });
 
-        $this->app->bind('clean.service', function ($app) {
-            return new Clean();
-        });
-
-       
+        // $this->app->bind('clean.service', function ($app) {
+        //     return new CleanCommand();
+        // });       
     }
 
     /**
