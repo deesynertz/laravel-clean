@@ -63,6 +63,7 @@ class CleanCommand extends Command
         if (isSpatiePermissionInstalled()) {
             # Spatie Permission package is installed, execute cache:forget command
             Artisan::call('cache:forget spatie.permission.cache');
+            $this->info('spatie permission cache cleared');
         }
 
         # Log a message
