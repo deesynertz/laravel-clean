@@ -1,6 +1,6 @@
 {
     "name": "deesynertz/laravel-clean",
-    "description": "a development tools that included artisan command to clean user config ans will add the cache clean",
+    "description": "The Laravel Convenience Clear Command is a handy package designed to streamline your Laravel application maintenance tasks with just a single command. With this package, you can execute multiple Artisan commands at once, simplifying the process of clearing various caches and configurations",
     "keywords": ["clean", "clear", "laravel", "php"],
     "homepage": "https://github.com/deesynertz/laravel-clean",
     "type": "library",
