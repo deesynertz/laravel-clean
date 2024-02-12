@@ -30,14 +30,9 @@ class CleanServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-         
-        // $this->publishes([
-        //     __DIR__ . '/config/toastr.php' => config_path('toastr.php'),
-        //     ], 'config');
-
-        //     $this->publishes([
-        //         __DIR__.'/path/to/config/yourconfig.php' => config_path('yourconfig.php'),
-        //     ], 'config');
+        if ($this->app->runningInConsole()) {
+            $this->commands([CleanCommand::class,]);
+        }
     }
 
     // /**
